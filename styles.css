@@ -1,0 +1,213 @@
+
+/*================
+Base Styles
+================*/
+
+* {
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+#wrapper {
+  margin: 0 auto;
+  width: 90%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #CFD8DC;
+}
+
+header {
+  text-align: center;
+}
+
+header p {
+  max-width: 90%;
+  margin: auto;
+}
+
+h1 {
+  color: white;
+  background: #4DB6AC;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.375em;
+  font-weight: 700;
+}
+
+p {
+  color: #757575;
+  font-weight: 300;
+}
+
+form {
+}
+
+h5 {
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: #E3E3E3;
+  border: none;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+::placeholder {
+  text-align: right;
+  padding: 20px;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+select {
+  height: 52px;
+}
+
+#zipcode {
+  width: 170px;
+  margin-bottom: 32px;
+}
+
+.news_format {
+  margin-left: 10px;
+}
+
+.news_type {
+  margin-left: 15px;
+}
+
+.newsletter {
+  margin-bottom: 15px;
+}
+
+.SN {
+  margin: 5px;
+}
+
+#other_topics {
+  height: 75px;
+}
+
+button {
+  background-color: #4DB6AC;
+  color: white;
+  border: none;
+  width: 100%;
+  height: 55px;
+  border-radius: 3.5%;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 200px;
+  margin-top: 10px;
+  color: #757575;
+}
+
+
+input:focus, textarea:focus {
+  background-color: lightblue;
+  transition: background 1s ease .5s;
+  border: 3px solid #4DB6AC;
+  transition: border .5s linear;
+}
+
+
+
+input:hover {
+
+}
+
+input:invalid {
+  background-color: pink ;
+}
+/*================
+Line Styles
+================*/
+
+.line1 {
+  border: solid black 2px;
+  margin-bottom: 3px;
+  margin-top: 35px;
+}
+
+.line2 {
+  border: solid black 1px;
+  margin-bottom: 22.5px;
+}
+
+.line3 {
+  border: solid black 1.5px;
+  margin-bottom: 32px;
+}
+
+
+/*================
+Media Queries
+================*/
+
+@media screen and (min-width: 768px) {
+
+  #wrapper {
+    max-width: 600px;
+  }
+
+  .input_text label {
+    width: 25%;
+  }
+
+  .input_text input, select {
+    width: 70%;
+    margin-top: 15px;
+  }
+
+ .input_text br {
+   display: none ;
+ }
+
+footer {
+  margin-top: 100px;
+  margin-bottom: 200px;
+  }
+}
